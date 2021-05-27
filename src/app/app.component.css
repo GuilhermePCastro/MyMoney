@@ -1,0 +1,25 @@
+.sidenav{
+  width: 150px;
+}
+
+.icone-menu{
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.nav-list a{
+  color: rgb(75, 75, 75);
+}
+
+.card-principal{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  padding: 15vh;
+
+}
+
+.nav-content{
+  min-height: calc(100vh - 90px);
+}
