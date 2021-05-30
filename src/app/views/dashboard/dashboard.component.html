@@ -1,1 +1,103 @@
-<p>dashboard works!</p>
+<div class="pagina">
+  <mat-card class="resumo-total">
+    <h2>
+      Visão Geral
+      <button mat-icon-button>
+        <span class="material-icons btn-visible">
+          visibility
+        </span>
+      </button>
+    </h2>
+
+    <div class="valores flex">
+      <div class="valores-entradas">
+        <h3>Entradas</h3>
+        <span>R$ 3.500,00</span>
+      </div>
+      <div class="valores-total">
+        <h3>Saldo Total</h3>
+        <span>R$ 3.400,00</span>
+      </div>
+      <div class="valores-saidas">
+        <h3>Saídas</h3>
+        <span>R$ 100,00</span>
+      </div>
+    </div>
+  </mat-card>
+
+  <div class="movimentacao">
+    <mat-card class="resumo">
+      <h2>Resumo Movimentações</h2>
+
+      <mat-list class="lista">
+        <mat-list-item class="lista-item">
+            <mat-icon mat-list-icon class="icone-entrada">add_circle</mat-icon>
+            <div mat-line class="texto-resumo">Entradas</div>
+            <div mat-collum class="texto-resumo">R$ 3.000,00</div>
+        </mat-list-item>
+        <mat-list-item class="lista-item">
+          <mat-icon mat-list-icon class="icone-saida">remove_circle</mat-icon>
+          <div mat-line class="texto-resumo">Saídas</div>
+          <div mat-collum class="texto-resumo">R$ 100,00</div>
+        </mat-list-item>
+      </mat-list>
+
+    </mat-card>
+
+    <mat-card class="resumo">
+      <h2>Economia</h2>
+      <h3>Você está economizando: R$ 2.900,00 - (50%)</h3>
+      <div class="flex">
+        <div>
+          <mat-progress-spinner
+            class="resumo-economia"
+            color="primary"
+            mode="determinate"
+            value="80">
+          </mat-progress-spinner>
+        </div>
+        <div>
+          <mat-list>
+            <mat-list-item>
+                <div mat-line>Entradas consideradas</div>
+                <div mat-line>R$ 3.000,00</div>
+            </mat-list-item>
+            <mat-list-item>
+              <div mat-line>Saídas consideradas</div>
+              <div mat-line>R$ 100,00</div>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </div>
+
+
+    </mat-card>
+
+    <mat-card class="resumo">
+      <h2 class="titulo-categoria">Despesas por Categoria</h2>
+
+      <mat-list>
+        <mat-list-item>
+            <mat-icon mat-list-icon>pool</mat-icon>
+            <div mat-line>Lazer</div>
+            <div mat-collum>R$ 20,00</div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>restaurant_menu</mat-icon>
+          <div mat-line>Comida</div>
+          <div mat-collum>R$ 30,00</div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>house</mat-icon>
+          <div mat-line>Casa</div>
+          <div mat-collum>R$ 40,00</div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>directions_car</mat-icon>
+        <div mat-line>Carro</div>
+        <div mat-collum>R$ 10,00</div>
+      </mat-list-item>
+      </mat-list>
+    </mat-card>
+  </div>
+</div>

@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 // Componentes Angular
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,6 +18,12 @@ import { SobreComponent } from './views/sobre/sobre.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { EntradaComponent } from './views/entrada/entrada.component';
 import { SaidaComponent } from './views/saida/saida.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +43,13 @@ import { SaidaComponent } from './views/saida/saida.component';
     MatIconModule,
     MatButtonModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    MatDividerModule,
+    MatProgressSpinnerModule,
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

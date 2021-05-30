@@ -8,7 +8,7 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side" class="sidenav"  opened>
+  <mat-sidenav #sidenav class="sidenav" [mode]="screenWidth > 600 ? 'side' : 'over'" [opened]="screenWidth > 600">
     <mat-nav-list class="nav-list">
       <a routerLink="/" mat-list-item>
         <mat-icon class="icone-menu">grid_view</mat-icon>
