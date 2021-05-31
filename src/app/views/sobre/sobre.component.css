@@ -1,0 +1,28 @@
+.pagina{
+  margin: auto;
+}
+
+h2{
+  margin-bottom: 0px;
+  color: rgb(53, 52, 52);
+}
+.card-principal{
+  margin: 10px;
+}
+
+.titulo{
+  margin-left: 7px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  color: rgb(53, 52, 52);
+}
+
+.texto{
+  margin-top: 20px;
+}

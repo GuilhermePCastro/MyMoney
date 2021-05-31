@@ -1,9 +1,9 @@
 export class Movimentacao{
 
   id?: number;
-  type = '';
+  mov = '';
   desc = '';
   date = '';
-  value = 0;
+  price = 0;
 
 }

@@ -24,12 +24,14 @@
 .valores-total{
   flex-grow: 2;
   text-align: center;
+  color: rgb(53, 52, 52);
 }
 
 .valores-total h3{
   font-size: 30px;
   text-align: center;
   margin-bottom: 30px;
+
 }
 
 .valores-total span{
@@ -52,6 +54,7 @@
 .valores-saidas span{
   font-size: 20px;
   text-align: center;
+  color: rgb(53, 52, 52);
 }
 
 .valores-entradas{
@@ -69,11 +72,13 @@
 .valores-entradas span{
   font-size: 20px;
   text-align: center;
+  color: rgb(53, 52, 52);
 }
 
 
 .lista-item{
   margin-top: 15px;
+  color: rgb(53, 52, 52);
 }
 
 .icone-entrada{
@@ -98,7 +103,7 @@
 
 .texto-resumo{
   font-size: 25px !important;
-  color: rgb(56, 56, 56) !important;
+  color: rgb(53, 52, 52) !important;
 }
 
 .resumo-economia{
@@ -108,9 +113,8 @@
 
 .titulo-categoria{
   margin-bottom: 0px;
+
 }
-
-
 
 @media (max-width: 900px) {
 
@@ -120,13 +124,12 @@
 
    .resumo-total{
     margin: 20px;
-    width: 80vw;
+    width: 100vw;
   }
 
    .resumo{
     margin: 20px;
     width: 100vw;
-    height: 40vh;
    }
 
 }

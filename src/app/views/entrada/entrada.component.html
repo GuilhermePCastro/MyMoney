@@ -1,18 +1,67 @@
+
+<button mat-fab color="primary" class="add-button" >
+  <mat-icon>add</mat-icon>
+</button>
 <div class="pagina">
+
   <mat-card class="resumo-total">
     <h2>
       Entradas
     </h2>
 
-    <div class="valores flex">
+
+    <div class="valores flex" *ngIf="1 > 2">
       <div class="valores-total">
         <h3>Total de entradas</h3>
         <span>R$ 3.500,00</span>
       </div>
     </div>
+
+    <div class="form"  *ngIf="1 > 0">
+
+      <div>
+        <mat-form-field class="form-field">
+          <mat-label>Descrição</mat-label>
+            <input matInput type="text"  name="" id="">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Categoria</mat-label>
+          <mat-select>
+            <mat-option value="Pagamentos">Pagamentos</mat-option>
+            <mat-option value="Comissão">Comissão</mat-option>
+            <mat-option value="Benefícios">Benefícios</mat-option>
+            <mat-option value="Outros">Outros</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="form-field-2">
+          <mat-label>Data</mat-label>
+            <input matInput type="date"  name="" id="">
+        </mat-form-field>
+
+        <mat-form-field class="form-field-2">
+          <mat-label>Valor</mat-label>
+            <input matInput type="number"  name="" id="">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <button mat-raised-button class="button-form" color="warn">Salvar</button>
+        <button mat-raised-button class="button-form" color="basic">Cancelar</button>
+      </div>
+
+    </div>
+
+
   </mat-card>
 
   <mat-card class="entradas">
+
     <h2>
       Todas as entradas
     </h2>

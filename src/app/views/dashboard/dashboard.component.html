@@ -12,15 +12,15 @@
     <div class="valores flex">
       <div class="valores-entradas">
         <h3>Entradas</h3>
-        <span>R$ 3.500,00</span>
+        <span>{{ totalEntrada | currency}}</span>
       </div>
       <div class="valores-total">
         <h3>Saldo Total</h3>
-        <span>R$ 3.400,00</span>
+        <span>{{ totalGeral | currency }}</span>
       </div>
       <div class="valores-saidas">
         <h3>Saídas</h3>
-        <span>R$ 100,00</span>
+        <span>{{ totalSaida | currency }}</span>
       </div>
     </div>
   </mat-card>
@@ -33,12 +33,12 @@
         <mat-list-item class="lista-item">
             <mat-icon mat-list-icon class="icone-entrada">add_circle</mat-icon>
             <div mat-line class="texto-resumo">Entradas</div>
-            <div mat-collum class="texto-resumo">R$ 3.000,00</div>
+            <div mat-collum class="texto-resumo">{{ totalEntrada | currency}}</div>
         </mat-list-item>
         <mat-list-item class="lista-item">
           <mat-icon mat-list-icon class="icone-saida">remove_circle</mat-icon>
           <div mat-line class="texto-resumo">Saídas</div>
-          <div mat-collum class="texto-resumo">R$ 100,00</div>
+          <div mat-collum class="texto-resumo">{{ totalSaida | currency }}</div>
         </mat-list-item>
       </mat-list>
 
@@ -46,25 +46,25 @@
 
     <mat-card class="resumo">
       <h2>Economia</h2>
-      <h3>Você está economizando: R$ 2.900,00 - (50%)</h3>
+      <h3>Você está economizando: {{ totalGeral | currency }} - ({{ porEconomia }}%)</h3>
       <div class="flex">
         <div>
           <mat-progress-spinner
             class="resumo-economia"
             color="primary"
             mode="determinate"
-            value="80">
+            [value]="porEconomia">
           </mat-progress-spinner>
         </div>
         <div>
           <mat-list>
             <mat-list-item>
                 <div mat-line>Entradas consideradas</div>
-                <div mat-line>R$ 3.000,00</div>
+                <div mat-line>{{ totalEntrada | currency}}</div>
             </mat-list-item>
             <mat-list-item>
               <div mat-line>Saídas consideradas</div>
-              <div mat-line>R$ 100,00</div>
+              <div mat-line>{{ totalSaida | currency }}</div>
             </mat-list-item>
           </mat-list>
         </div>
@@ -93,8 +93,8 @@
           <div mat-collum>R$ 40,00</div>
       </mat-list-item>
       <mat-list-item>
-        <mat-icon mat-list-icon>directions_car</mat-icon>
-        <div mat-line>Carro</div>
+        <mat-icon mat-list-icon>article</mat-icon>
+        <div mat-line>Outros</div>
         <div mat-collum>R$ 10,00</div>
       </mat-list-item>
       </mat-list>
