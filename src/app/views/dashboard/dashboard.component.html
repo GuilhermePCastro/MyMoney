@@ -46,27 +46,26 @@
 
     <mat-card class="resumo">
       <h2>Economia</h2>
-      <h3>Você está economizando: {{ totalGeral | currency }} - ({{ porEconomia }}%)</h3>
+      <h3>Você está economizando:</h3>
       <div class="flex">
-        <div>
+        <div *ngIf="porEconomia > 0">
           <mat-progress-spinner
             class="resumo-economia"
-            color="primary"
             mode="determinate"
             [value]="porEconomia">
           </mat-progress-spinner>
         </div>
-        <div>
-          <mat-list>
-            <mat-list-item>
-                <div mat-line>Entradas consideradas</div>
-                <div mat-line>{{ totalEntrada | currency}}</div>
-            </mat-list-item>
-            <mat-list-item>
-              <div mat-line>Saídas consideradas</div>
-              <div mat-line>{{ totalSaida | currency }}</div>
-            </mat-list-item>
-          </mat-list>
+        <div *ngIf="porEconomia < 0">
+          <mat-progress-spinner
+            class="resumo-economia"
+            mode="determinate"
+            color="warn"
+            [value]="100">
+          </mat-progress-spinner>
+        </div>
+        <div class="div-porEconomia" [ngClass]="classeTextoEconomia">
+            <span class="porcentagem">{{ porEconomia }}%</span>
+            <p class="texto-porcentagem">{{ msgEconomia }}</p>
         </div>
       </div>
 
@@ -80,22 +79,22 @@
         <mat-list-item>
             <mat-icon mat-list-icon>pool</mat-icon>
             <div mat-line>Lazer</div>
-            <div mat-collum>R$ 20,00</div>
+            <div mat-collum>{{ totalLazer | currency }}</div>
         </mat-list-item>
         <mat-list-item>
           <mat-icon mat-list-icon>restaurant_menu</mat-icon>
           <div mat-line>Comida</div>
-          <div mat-collum>R$ 30,00</div>
+          <div mat-collum>{{ totalComida | currency }}</div>
         </mat-list-item>
         <mat-list-item>
           <mat-icon mat-list-icon>house</mat-icon>
           <div mat-line>Casa</div>
-          <div mat-collum>R$ 40,00</div>
+          <div mat-collum>{{ totalCasa | currency }}</div>
       </mat-list-item>
       <mat-list-item>
         <mat-icon mat-list-icon>article</mat-icon>
         <div mat-line>Outros</div>
-        <div mat-collum>R$ 10,00</div>
+        <div mat-collum>{{ totalOutros | currency }}</div>
       </mat-list-item>
       </mat-list>
     </mat-card>

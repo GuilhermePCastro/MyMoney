@@ -3,16 +3,58 @@
     {
       "id": 1,
       "mov": "E",
-      "desc": "Sálario do mês",
-      "date": "27/05/2021",
-      "price": 3000.00
+      "desc": "Sálario do mês 2",
+      "date": "2021-05-19",
+      "category": "Pagamentos",
+      "price": 800
     },
     {
       "id": 2,
       "mov": "S",
       "desc": "Cinema",
-      "date": "27/05/2021",
-      "price": 50.00
+      "date": "2021-05-31",
+      "category": "Lazer",
+      "price": 800
+    },
+    {
+      "mov": "E",
+      "desc": "Comissão do mês",
+      "date": "2021-05-31",
+      "price": 570,
+      "category": "Comissão",
+      "id": 3
+    },
+    {
+      "mov": "E",
+      "desc": "Rolo do Corsinha",
+      "date": "2021-05-31",
+      "price": 100,
+      "category": "Outros",
+      "id": 4
+    },
+    {
+      "mov": "S",
+      "desc": "Dogão do Senac",
+      "date": "2021-05-28",
+      "price": 5,
+      "category": "Comida",
+      "id": 5
+    },
+    {
+      "mov": "S",
+      "desc": "Compras do mês",
+      "date": "2021-05-29",
+      "price": 575.95,
+      "category": "Casa",
+      "id": 6
+    },
+    {
+      "mov": "S",
+      "desc": "Guarda-chuva",
+      "date": "2021-05-30",
+      "price": 15,
+      "category": "Outros",
+      "id": 7
     }
   ]
 }

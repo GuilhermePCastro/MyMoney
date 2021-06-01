@@ -25,12 +25,14 @@
   flex-grow: 2;
   text-align: center;
   color: rgb(53, 52, 52);
+  font-weight: bold;
 }
 
 .valores-total h3{
   font-size: 30px;
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
 
 }
 
@@ -49,6 +51,7 @@
   margin-bottom: 5px;
   text-align: center;
   color: rgb(230, 48, 48);
+  font-weight: bold;
 }
 
 .valores-saidas span{
@@ -67,6 +70,7 @@
   margin-bottom: 5px;
   text-align: center;
   color:rgb(30, 184, 30);
+  font-weight: bold;
 }
 
 .valores-entradas span{
@@ -114,6 +118,38 @@
 .titulo-categoria{
   margin-bottom: 0px;
 
+}
+
+.div-porEconomia{
+  margin: auto;
+}
+
+.porcentagem{
+  font-size: 60px;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-top: 30px;
+  display: block;
+  font-weight: 600;
+
+}
+
+.por-bom{
+  color: rgb(57, 211, 57);
+}
+
+.por-medio{
+  color: rgb(221, 217, 6);
+}
+
+.por-ruim{
+  color: rgb(211, 57, 57);
+}
+.texto-porcentagem{
+  font-size: 20px;
+  margin-left: 25%;
+  margin-right: 0px;
+  margin-top: 30px;
 }
 
 @media (max-width: 900px) {

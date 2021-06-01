@@ -42,7 +42,7 @@ export class MovimentacaoService {
 
    // Função que deleta a movimentação no endPoint de acordo com o Id passado
   delete(id: number): Observable<any>{
-    return this.http.delete<any>(`${environment.apiEndpoint}/movimentacap/${id}`);
+    return this.http.delete<any>(`${environment.apiEndpoint}/movimentacao/${id}`);
   }
 
 

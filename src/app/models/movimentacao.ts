@@ -5,5 +5,6 @@ export class Movimentacao{
   desc = '';
   date = '';
   price = 0;
+  category = '';
 
 }
