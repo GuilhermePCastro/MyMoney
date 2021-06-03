@@ -27,11 +27,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 
 // Parte para identificar local
 import {LOCALE_ID, DEFAULT_CURRENCY_CODE} from '@angular/core';
 import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
+import { ConfirmComponent } from './views/dialogs/confirm/confirm.component';
+
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
@@ -40,7 +43,8 @@ registerLocaleData(localePt, 'pt');
     SobreComponent,
     DashboardComponent,
     EntradaComponent,
-    SaidaComponent
+    SaidaComponent,
+    ConfirmComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,8 @@ registerLocaleData(localePt, 'pt');
     MatDatepickerModule,
     MatSelectModule,
     MatSnackBarModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [
     {

@@ -3,6 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MovimentacaoService } from 'src/app/services/movimentacao.service';
 import { HttpErrorResponse } from '@angular/common/http';
+import { MatDialog } from '@angular/material/dialog';
+import { ConfirmComponent } from '../dialogs/confirm/confirm.component';
+import { ConfirmationVo } from '../dialogs/confirm/confirmation-vo';
 
 @Component({
   selector: 'app-saida',
@@ -28,7 +31,8 @@ export class SaidaComponent implements OnInit {
 
 
   constructor(private movimentacaoService: MovimentacaoService,
-              private snackBar: MatSnackBar) { }
+              private snackBar: MatSnackBar,
+              private dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.list();
@@ -162,4 +166,33 @@ export class SaidaComponent implements OnInit {
       }
     );
   }
+
+  confirmar(movId?: number): void{
+    const result = this.dialog.open(ConfirmComponent, {
+      width: '300px',
+      data: {id: movId, pergunta: false}
+    });
+
+    result.afterClosed().subscribe((confirmationVo: ConfirmationVo) => {
+      if(confirmationVo && confirmationVo.pergunta){
+        this.remover(movId);
+      }
+    });
+
+  }
+
+  remover(removeId?: number): void{
+    if (removeId){
+      this.movimentacaoService.delete(removeId).subscribe(
+        any => {
+          this.list();
+        },
+        error => {
+          this.msgError = 'Erro ao deletar a saída! - Erro: ';
+          this.erroService(error);
+        }
+      );
+    }
+  }
+
 }

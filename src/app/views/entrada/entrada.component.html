@@ -22,7 +22,7 @@
       <div>
         <mat-form-field class="form-field">
           <mat-label >Descrição</mat-label>
-            <input matInput type="text"  name="" id="" [(ngModel)]="entrada.desc">
+          <input matInput type="text"  name="" id="" [(ngModel)]="entrada.desc">
         </mat-form-field>
       </div>
 
@@ -41,12 +41,13 @@
       <div>
         <mat-form-field class="form-field-2">
           <mat-label>Data</mat-label>
-            <input matInput type="date"  name="" id="" [(ngModel)]="entrada.date">
+          <input matInput type="date"  name="" id="" [(ngModel)]="entrada.date">
+
         </mat-form-field>
 
         <mat-form-field class="form-field-2">
           <mat-label>Valor</mat-label>
-            <input matInput type="number"  name="" id="" [(ngModel)]="entrada.price">
+          <input matInput type="number"  name="" id="" [(ngModel)]="entrada.price">
         </mat-form-field>
       </div>
 
@@ -90,7 +91,7 @@
                 edit
               </span>
             </button>
-            <button mat-icon-button color="warn">
+            <button mat-icon-button color="warn" (click)="confirmar(entrada.id)">
               <span class="material-icons btn-visible">
                 delete
               </span>

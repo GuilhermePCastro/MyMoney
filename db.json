@@ -3,42 +3,26 @@
     {
       "id": 1,
       "mov": "E",
-      "desc": "Sálario do mês 2",
+      "desc": "Sálario do mês ",
       "date": "2021-05-19",
       "category": "Pagamentos",
-      "price": 800
+      "price": 3500
     },
     {
       "id": 2,
       "mov": "S",
       "desc": "Cinema",
       "date": "2021-05-31",
-      "category": "Lazer",
-      "price": 800
+      "category": "Casa",
+      "price": 100.85
     },
     {
       "mov": "E",
       "desc": "Comissão do mês",
       "date": "2021-05-31",
-      "price": 570,
+      "price": 100,
       "category": "Comissão",
       "id": 3
-    },
-    {
-      "mov": "E",
-      "desc": "Rolo do Corsinha",
-      "date": "2021-05-31",
-      "price": 100,
-      "category": "Outros",
-      "id": 4
-    },
-    {
-      "mov": "S",
-      "desc": "Dogão do Senac",
-      "date": "2021-05-28",
-      "price": 5,
-      "category": "Comida",
-      "id": 5
     },
     {
       "mov": "S",
@@ -52,7 +36,7 @@
       "mov": "S",
       "desc": "Guarda-chuva",
       "date": "2021-05-30",
-      "price": 15,
+      "price": 25,
       "category": "Outros",
       "id": 7
     }

@@ -156,6 +156,7 @@
 
   .movimentacao{
     display: block;
+    width: 100vw;
    }
 
    .resumo-total{
@@ -164,9 +165,50 @@
   }
 
    .resumo{
+    display: block;
     margin: 20px;
     width: 100vw;
    }
+
+   .valores-total h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+  }
+
+  .valores-total span{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .valores-saidas h3{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(230, 48, 48);
+    font-weight: bold;
+  }
+
+  .valores-saidas span{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(53, 52, 52);
+  }
+
+  .valores-entradas h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    color:rgb(30, 184, 30);
+    font-weight: bold;
+  }
+
+  .valores-entradas span{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(53, 52, 52);
+  }
 
 }
 

@@ -1,6 +1,6 @@
 <div class="pagina">
 
-  <button mat-fab color="warn" class="add-button" (click)="addMovimentacao()">
+  <button mat-fab color="primary" class="add-button" (click)="addMovimentacao()">
     <mat-icon>add</mat-icon>
   </button>
 
@@ -87,7 +87,7 @@
                 edit
               </span>
             </button>
-            <button mat-icon-button color="warn">
+            <button mat-icon-button color="warn" (click)="confirmar(saida.id)">
               <span class="material-icons btn-visible">
                 delete
               </span>
