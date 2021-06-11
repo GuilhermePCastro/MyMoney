@@ -3,26 +3,18 @@
     {
       "id": 1,
       "mov": "E",
-      "desc": "Sálario do mês ",
+      "desc": "Sálario do mês 2",
       "date": "2021-05-19",
       "category": "Pagamentos",
-      "price": 3500
+      "price": 4000
     },
     {
       "id": 2,
       "mov": "S",
-      "desc": "Cinema",
+      "desc": "Cinema ",
       "date": "2021-05-31",
       "category": "Casa",
-      "price": 100.85
-    },
-    {
-      "mov": "E",
-      "desc": "Comissão do mês",
-      "date": "2021-05-31",
-      "price": 100,
-      "category": "Comissão",
-      "id": 3
+      "price": 50
     },
     {
       "mov": "S",
@@ -34,9 +26,9 @@
     },
     {
       "mov": "S",
-      "desc": "Guarda-chuva",
-      "date": "2021-05-30",
-      "price": 25,
+      "desc": "Tênis",
+      "date": "2021-06-10",
+      "price": 500,
       "category": "Outros",
       "id": 7
     }

@@ -7,8 +7,9 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyMoney';
-screenWidth = window.innerWidth;
+  screenWidth = window.innerWidth;
 
+  // Validando o tamanho da tela
   @HostListener('window:resize', ['$event'])
   onResize(){
     this.screenWidth = window.innerWidth;
